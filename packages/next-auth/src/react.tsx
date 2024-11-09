@@ -42,11 +42,7 @@ import type {
 
 // TODO: Remove/move to core?
 export type {
-  LiteralUnion,
-  SignInOptions,
-  SignInAuthorizationParams,
-  SignOutParams,
-  SignInResponse,
+  LiteralUnion, SignInAuthorizationParams, SignInOptions, SignInResponse, SignOutParams
 }
 
 export { SessionProviderProps }
@@ -427,8 +423,6 @@ export function SessionProvider(props: SessionProviderProps) {
         setLoading(false)
       }
     }
-
-    __NEXTAUTH._getSession()
 
     return () => {
       __NEXTAUTH._lastSync = 0
